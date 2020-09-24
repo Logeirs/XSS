@@ -1,0 +1,2 @@
+# XSS
+My XSS payloads
